@@ -1,0 +1,35 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package inheritance;
+
+/**
+ *
+ * @author User
+ */
+public class Siswa extends TugasPraktikum {
+    
+    protected  String kelas;
+    protected int absen, NIS;
+    
+    public Siswa(String nama, String status, String kelas, int absen, int NIS,  String agama, 
+            String jenisKelamin, int usia){
+        super (nama, status, agama, jenisKelamin,usia );
+        this.kelas = kelas;
+        this.absen = absen;
+        this.NIS = NIS;}
+    
+    @Override
+    public void info(){
+         System.out.println("------- Detail Siswa -------");
+         super.info();
+          System.out.println("Kelas         : " + this.kelas);
+          System.out.println("Absen Siswa   : " + this.absen );
+          System.out.println("NIS           : " + this.NIS);
+          System.out.println("............................"); 
+          System.out.println("");
+    }
+    
+}
