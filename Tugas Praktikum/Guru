@@ -1,0 +1,35 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package inheritance;
+
+/**
+ *
+ * @author User
+ */
+public class Guru extends TugasPraktikum {
+    protected String matpel;
+    protected int NIP;
+    
+    public Guru(String nama, String status,String matpel,int NIP,  String agama, 
+            String jenisKelamin, int usia){
+        super (nama, status, agama, jenisKelamin, usia);
+        this.matpel = matpel;
+        this.NIP = NIP;}
+    
+     @Override
+    public void info(){
+         System.out.println("------- Detail Guru -------");
+         super.info();
+
+          System.out.println("Mengajar      : " + this.matpel);
+          System.out.println("NIP           : " + this.NIP);
+          System.out.println("............................");    
+          System.out.println("");
+    }
+    
+    }
+    
+
