@@ -1,0 +1,28 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package inheritance;
+
+/**
+ *
+ * @author User
+ */
+public class Person {
+    private final String name;
+    private final int usia;
+    
+    //Konstruktor
+    public Person (String name, int usia){
+        this.name = name;
+        this.usia = usia;
+    }
+    
+    //Metode
+    public void info(){
+        System.out.println("Nama : " + this.name);
+        System.out.println("Usia : " + this.usia);
+    }
+            
+}
