@@ -1,0 +1,28 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package inheritance;
+
+/**
+ *
+ * @author User
+ */
+public class main {
+    public static void main(String[] nisa) {
+        
+       Siswa siswa = new Siswa("Edin Nugraha", "SISWA", "X RPL 1", 17, 3976515, "ISLAM",
+                "L", 17);
+       siswa.info();
+       
+       Guru guru = new Guru("Bu Diana", "GURU", "MATEMATIKA", 173450966, "ISLAM", 
+       "P", 30);
+       guru.info();
+       
+       Karyawan staff = new Karyawan("Bu Dara", "STAFF","Penjaga Perpustakaan", 1453241987, "ISLAM", 
+       "P", 44);
+       staff.info();
+       
+    }
+}
